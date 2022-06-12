@@ -9,3 +9,5 @@ dependencyResolutionManagement {
 rootProject.name = "LearnAndroid"
 include ':app'
 include ':p0031firstproject'
+include ':P0131_MenuSimple'
+include ':myapplicationtest'
