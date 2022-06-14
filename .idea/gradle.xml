@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/P0131_MenuSimple" />
+            <option value="$PROJECT_DIR$/P0161_DynamicLayout" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/myapplicationtest" />
             <option value="$PROJECT_DIR$/p0031firstproject" />
