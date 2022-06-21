@@ -1,5 +1,6 @@
 package com.example.p0161_dynamiclayout
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.ViewGroup
@@ -43,6 +44,10 @@ class MainActivity : AppCompatActivity() {
 
         val btn1 = Button(this)
         btn1.text = "Button1"
+        btn1.setOnClickListener() {
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
+        }
         linLayout.addView(btn1, leftMarginParams)
 
         val rightGravityParams: LinearLayout.LayoutParams = LinearLayout.LayoutParams(
