@@ -10,20 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAndroid">
         <activity
+            android:name=".DatetimeActivity"
+            android:label="Date Expanded"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="su.codesign.action.DATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".TimeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="su.codesign.action.TIME" />
-                <category android:name="android.intent.category.DEFAULT"></category>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".DateActivity"
+            android:label="Date Basic"
             android:exported="true">
             <intent-filter>
                 <action android:name="su.codesign.action.DATE" />
-                <category android:name="android.intent.category.DEFAULT"></category>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity

@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DateActivity">
+    tools:context=".DatetimeActivity">
 
     <TextView
-        android:id="@+id/dateText"
-        android:layout_width="214dp"
-        android:layout_height="21dp"
+        android:id="@+id/dateTimeText"
+        android:layout_width="282dp"
+        android:layout_height="15dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
