@@ -15,12 +15,14 @@
             android:exported="false" >
             <intent-filter>
                 <action android:name="su.codesign.action.DATE" />
+                <action android:name="su.codesign.action.DATE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".TimeActivity"
+            android:label="Time"
             android:exported="true">
             <intent-filter>
                 <action android:name="su.codesign.action.TIME" />

@@ -11,8 +11,12 @@ class DatetimeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_datetime)
         val dateTimeText = findViewById(R.id.dateTimeText) as TextView
-        val sdf = SimpleDateFormat("dd.MM.yyyy HH:mm:ss")
-        val currentDate = sdf.format(Date(System.currentTimeMillis()))
-        dateTimeText.text = currentDate
+        if (intent.action.equals("su.codesign.action.TIME")) {
+            val sdf = SimpleDateFormat("dd.MM.yyyy HH:mm:ss")
+            val currentDate = sdf.format(Date(System.currentTimeMillis()))
+            dateTimeText.text = currentDate
+        } else {
+            dateTimeText.text = "DATE"
+        }
     }
 }
