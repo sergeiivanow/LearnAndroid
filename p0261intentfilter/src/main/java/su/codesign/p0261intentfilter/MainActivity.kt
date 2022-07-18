@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         date.setOnClickListener {
             val intent = Intent("su.codesign.action.DATE")
+            intent.putExtra("title", "Date")
             startActivity(intent)
         }
 
